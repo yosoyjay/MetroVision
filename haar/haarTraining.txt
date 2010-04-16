@@ -1,0 +1,69 @@
+
+Notes from:
+http://www.computer-vision-software.com/blog/2009/11/faq-opencv-haartraining/
+
+Collecting Positive Images
+- Background should vary.  It shouldn't be plain or too busy.
+- Alter lighting conditions as well.
+- Should probably use same backgrounds for negative values.
+	-> Also use random shots of things around the lab
+- There is an accompanying file that indicates that describes
+  boxes around objects of interest
+	-> Use Object Identifier program to define the object
+	   in the images
+- Should I write a function to grab images from a stream and
+  save them to disk??
+
+- createsamples depend on aspect ratio of object (-w -h). Objects
+  smaller than -w & -h specified will not be detected.
+	-> Folks use 20x20 or 24x24 for faces
+	-> Goal is 39'x 14' ~ 40 x 15
+
+Negative Images
+- Negative images do not have to be the same size, but should
+  not be less than -w/-h specified for vec generation
+
+- Should have positive:negative = 1:2
+	-> Many folks use 1000 training images
+
+Test Case 1:
+- Installed ObjectMaker - Had to change make file from -I & -L to using pkg-config and remade project
+- Took 20 images of the goal using the captureImage function I just created in Camera Class
+- Took 40 images of the backgrounds behind pictures of the goal and stuff around the lab
+- Used the created annotation.txt to create a sample.vec file
+  -> opencv-createsamples -info annotation.txt -vec samples.vec -w 40 -h 15
+  -> annotation.txt is of:
+     1.  positive images and their location
+     2.  definition of where in the image the object exists
+- Created a negatives.dat file which lists all the negative files
+- Ran opencv-haartrainer -data goalCascade -vec samples.vec -bg negatives.dat -w 40 -h 15
+
+Time: 1 mintue for trainer
+
+- Results
+  -> Can identify the goal from a wide variety of angles.  Runs into difficulty if the Aibo is 
+     positioned far about the goal.
+  -> There are many false positives, focused around dark areas of the lab.
+  -> Overall, not too shabby considering folks recommend training sets of 1000s.
+  -> The dimensions didn't appear to give any problems.
+
+- Next Steps
+  -> Create more samples and retest.  40 positive samples, 80 negative samples
+
+
+Test Case 2:
+- Took new pictures and overwrote the old ones because I'm an idiot.  But, I still have the .vec file so I can use a script to combine to .vec files.
+- Used "mogrify -format jpg *.bmp" to convert all .bmp to .jpg files
+ => OpenCV will do this.  Next time you collect images just change the output
+    file extension and OpenCV will take care of the jpeg compression.
+- All photos go into rawdata folder in ObjectMaker then use ./ObjectMaker
+  to highlight where in the image the goal is.
+- Used the annotation.txt to create another sample.vec file
+	->  Need to remove dates and header info in the annotation.txt
+	->
+	
+	
+
+
+
+

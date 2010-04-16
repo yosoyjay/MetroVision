@@ -1,0 +1,56 @@
+rawdata/image015.jpg 2 79 126 0 0 80 91 0 0 
+rawdata/image000.jpg 2 100 132 0 0 103 76 0 0 
+rawdata/image014.jpg 2 94 124 0 0 96 90 0 0 
+rawdata/image009.jpg 2 108 136 0 0 111 84 0 0 
+rawdata/image006.jpg 2 90 134 0 0 93 85 0 0 
+rawdata/image020.jpg 2 106 121 0 0 106 81 0 0 
+rawdata/image016.jpg 2 81 120 0 0 85 71 0 0 
+rawdata/image012.jpg 2 74 120 0 0 74 91 0 0 
+rawdata/image010.jpg 2 108 135 0 0 109 101 0 0 
+rawdata/image001.jpg 2 98 142 0 0 100 85 0 0 
+rawdata/image019.jpg 2 98 132 0 0 98 90 0 0 
+rawdata/image013.jpg 2 91 116 0 0 91 92 0 0 
+rawdata/image011.jpg 2 101 134 0 0 104 97 0 0 
+rawdata/image018.jpg 2 119 125 0 0 119 83 0 0 
+rawdata/image007.jpg 2 95 127 0 0 98 87 0 0 
+rawdata/image002.jpg 2 84 138 0 0 88 83 0 0 
+rawdata/image008.jpg 2 85 120 0 0 86 94 0 0 
+rawdata/image003.jpg 2 106 141 0 0 110 90 0 0 
+rawdata/image005.jpg 2 103 132 0 0 104 84 0 0 
+rawdata/image004.jpg 2 94 130 0 0 98 74 0 0 
+rawdata/image017.jpg 2 121 118 0 0 123 96 0 0 
+
+########################
+ Fri Apr  9 12:41:22 2010
+ ########################
+rawdata/image015.jpg 1 14 80 133 57 
+rawdata/image014.jpg 1 44 87 108 47 
+rawdata/image009.jpg 1 17 79 176 74 
+
+########################
+ Fri Apr  9 12:45:10 2010
+ ########################
+
+########################
+ Fri Apr  9 12:45:23 2010
+ ########################
+rawdata/image015.jpg 1 18 80 129 58 
+
+########################
+ Fri Apr  9 12:47:51 2010
+ ########################
+rawdata/image015.jpg 1 12 78 135 58 
+
+########################
+ Fri Apr  9 12:50:19 2010
+ ########################
+
+########################
+ Fri Apr  9 12:50:46 2010
+ ########################
+rawdata/image015.jpg 1 16 79 133 57 
+rawdata/image014.jpg 1 46 83 107 53 
+
+########################
+ Fri Apr  9 12:52:34 2010
+ ########################
